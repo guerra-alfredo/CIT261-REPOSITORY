@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+        <title>CIT 261 Assignment Portal | Alfredo Guerra| BYU-Idaho</title>
+		<meta name="description" content="Assignment portal page for Alfredo Guerra in CIT 261">
+		<meta name="viewport" content="width=device-width, initialscale=1">
+		<link rel="stylesheet" href="styles/normalize.css">
+        <link href="styles/large.css" rel="stylesheet">
+
+	</head>
+	
+	<body>
+        <div class="content">	
+            <header class="spaceAround">
+                <h3>TOPIC 3: JSON Parse, Stringify</h3>
+            </header>
+            <nav>
+                <!-- future main memu -->
+            </nav>
+			
+            <main class="spaceAround">
+				
+				<p>1.- I have a default list of three object student already charged, those student are inside an array, when I press the button to add another student, the current list plus the new student are converted into a string by <strong>JSON.stringify()</strong></p>
+				<p>2.- After converting the array into a string, I store it using <strong>localStorage.setItem()</strong>, and then I retrieve the data using <strong>localStorage.getItem()</strong>, once I have the data again like a string, I convert it into an array by using <strong>JSON.parse</strong>, and then I show the updated list()</p> 
+				<!-- original list -->
+                <h3>Original list</h3>
+                <p id="list"></p><br>
+				
+				
+				
+				<form class ="form1">
+				  <h3>ADD NEW STUDENT</h3>
+				  <label for="fname">Name</label>
+				  <input type="text" id="fname" name="fname" placeholder="First Name - Last Name">
+				  <label for="passp">Passport</label>
+				  <input type="text" id="passp" name="passp"  placeholder="Only numbers...">
+				  <label for="gender">Gender</label>
+				  <input type="text" id="gender" name="gender">
+				  <label for="grade">Grade</label>
+				  <input type="text" id="grade" name="grade" placeholder="Only numbers...">
+                  <button type="button" onclick="insertStudent2()">Add Student</button>	
+				</form>
+				<br>
+				<p>3.- If you insert a new student in the <strong>upper Form</strong> you can see that it was added, now <strong>refresh the page</strong> and in the student search field insert the previous wrote passport, you will see that despite not being on the default list shown at the beginning, the student is displayed because the information was saved in the browser previously.</p>
+				<form class ="form1">
+				  <h3>Enter Passport</h3>
+				  <label for="passport">Passport</label>
+				  <input type="text" id="passport" name="passport"  placeholder="Only numbers...">
+                  <button type="button" onclick="findStudent()">FIND STUDENT</button>	
+				</form>
+				
+				<br>
+				
+				
+		
+				  <p id="studentData"></p>
+	
+                 
+						
+
+        
+            </main>
+            <footer>
+                <p>&copy; 2018, Alfredo Guerra, Chile, <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+            </footer>
+        </div>
+        <script src="scripts/topic3.js"></script>
+	</body>
+</html>

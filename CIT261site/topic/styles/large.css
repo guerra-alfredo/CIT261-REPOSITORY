@@ -32,3 +32,64 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+
+/** TOPIC 7 **/
+
+.flex-container {
+			  display: flex;
+			  justify-content: space-around;
+			  background-color: DodgerBlue;
+			}
+
+			.flex-container > div {
+			  background-color: #f1f1f1;
+			  margin: 30px;
+			  text-align: center;
+			}
+			
+			#div1 {
+				width: 300px;
+				height: 70px;
+				padding: 10px;
+				border: 1px solid #aaaaaa;
+				
+			}
+			
+			#div2 {
+				width: 300px;
+				height: 70px;
+				padding: 10px;
+				border: 1px solid #aaaaaa;
+			}
+			
+			
+			img{
+				display: block;
+                border-radius: 20px;
+				max-width:500px;
+				height: 297px;
+				margin-left: auto;
+				margin-right: auto;
+    
+			
+				
+            }
+			
+            #img3:hover{
+                -webkit-transition: 3s;
+                 transform: rotateY(180deg);
+            }
+			
+			#changeMe{
+				text-align: center;
+			}
+		
+/** END TOPIC 7 **/
+
+/** TOPIC 8 **/
+
+
+
+
+
+
