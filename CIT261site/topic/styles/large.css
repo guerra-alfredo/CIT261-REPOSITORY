@@ -20,6 +20,10 @@ img{
 	width: 100%;
 }
 
+.imgLarge{
+	width: 100%;
+}
+
 
 
 input[type=text], select {
@@ -32,6 +36,9 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+.colorTextTopic3{
+	color: blue;
+}
 
 /** TOPIC 7 **/
 
@@ -63,18 +70,15 @@ input[type=text], select {
 			}
 			
 			
-			img{
+			.topic7Img{
 				display: block;
                 border-radius: 20px;
 				max-width:500px;
 				height: 297px;
 				margin-left: auto;
 				margin-right: auto;
-    
-			
-				
-            }
-			
+			}
+
             #img3:hover{
                 -webkit-transition: 3s;
                  transform: rotateY(180deg);

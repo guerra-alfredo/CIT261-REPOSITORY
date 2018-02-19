@@ -40,6 +40,13 @@
 		displayStudentByPassoport(ps,retrieveArray);
 	}
 
+	//Delete data store inside the browser
+	function cleanLocalStorage(){
+        localStorage.removeItem("listStudent");
+		alert("The data has been deleted!");
+	}
+
+
 	//Display a student by Passport.
     function displayStudentByPassoport(ps,retrieveA){
 		var passport = ps;
